@@ -1,0 +1,149 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light teal background */
+}
+
+/* Style the CTA banner */
+.cta-banner {
+  /* Add background image and color overlay */
+  background-image: linear-gradient(rgba(34, 150, 182, 0.7), rgba(34, 150, 182, 0.7)), url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 400px; /* makes the banner tall */
+}
+
+/* Main heading style */
+.cta-banner h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Description style */
+.cta-description {
+  font-size: 1.2em;
+  margin-bottom: 35px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Call-to-action button style */
+.cta-button {
+  display: inline-block;
+  background-color: #2ee6d6; /* bright teal */
+  color: #1a3a4a;
+  padding: 16px 36px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  /* Make the button stand out */
+  box-shadow: 0 2px 8px rgba(34, 90, 120, 0.15);
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #1ccfc1;
+}
+
+/* Simple site header style */
+.site-header {
+  background-color: #1a7fa3; /* darker blue-teal for contrast */
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+  /* Add a subtle border to separate from banner */
+  border-bottom: 2px solid #2ee6d6;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Info section with two columns */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  background-color: #f4fbfd; /* very light teal */
+  border-radius: 15px;
+  display: table; /* Use table layout for simple columns */
+  width: 100%;
+}
+
+/* Image column */
+.info-image {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.info-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Text column */
+.info-text {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.info-text h3 {
+  color: #2196b6;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  color: #1a3a4a;
+}
+
+/* Responsive text for smaller screens */
+@media (max-width: 600px) {
+  .cta-banner h1 {
+    font-size: 1.5em;
+  }
+  .cta-description {
+    font-size: 1em;
+  }
+  .cta-banner {
+    padding: 40px 10px;
+    min-height: 250px;
+  }
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-section {
+    display: block;
+    padding: 10px;
+  }
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .info-image {
+    margin-bottom: 18px;
+  }
+}
